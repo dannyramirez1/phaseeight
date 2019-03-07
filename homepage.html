@@ -1,0 +1,100 @@
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PIXAR ESCAPE ROOM</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>	
+		<div class="half-column black">
+			<div class="left-row black center-content">
+				<div class=" appearance half-column lightblue center-content" id= "one">
+					<b>Question 1: What was the first Pixar movie ever created? </b>
+				</div>
+				<div class=" appearance half-column black center-content" id= "two">
+					<img src="images/coco.jpg" class="restrict-img-size" id= "first-row" onclick="nextImage2(this)"/>
+				</div>
+			</div>
+			<div class="left-row black center-content">
+				<div class=" appearance half-column lightblue center-content" id= "three">
+					<b>Question 2: Which Pixar movie made the most money?</b>
+				</div>
+				<div class=" appearance half-column black center-content" id= "four">
+					<img src="images/rat.jpg" class="restrict-img-size" id= "second-row" onclick="nextImage2(this)"/>
+				</div>
+			</div>
+			<div class="left-row black center-content">
+				<div class=" appearance half-column lightblue center-content" id= "five">
+					<b>Question 3: Which Pixar movie takes in the year 2805?</b>
+				</div>
+				<div class=" appearance half-column black center-content" id= "six">
+					<img src="images/bugs.jpg" class="restrict-img-size" id= "third-row" onclick="nextImage2(this)"/>
+				</div>
+			<div class=" full lightblue center-content" id= "twelve">
+					<b> LIGHT UP THE ROOM! </b>
+			</div>
+			</div>
+			<div class="left-row black center-content">
+				<div class=" appearance half-column lightblue center-content" id= "seven">
+					<b>Question 4:Which is the newest Pixar movie released?</b>
+				</div>
+				<div class=" appearance half-column black center-content" id= "eight">
+					<img src="images/up.jpg" class="restrict-img-size" id= "fourth-row" onclick="nextImage2(this)"/>
+				</div>
+			</div>
+			<div class="answer-box black center-content">
+				<div class="appearance hint-box lightblue center-content" id= "thirteen">
+				</div>
+				<div class="appearance check-box pinegreen center-content" id= "nine" onclick="checkMovie(this)">
+					<b>Check Answers</b>
+				</div>
+				<div class="appearance mark-box black center-content" id= "ten">
+					<img src="images/check.png" class="restrict-img-size">
+				</div>
+			</div>                                                        
+		</div>
+		<div class="half-column black">
+			<div class="third-row black center-content">
+				<div class="three-col black center-content">
+					<img src="images/lamp3.png" class="strech-img-size" id= "box-one"  onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp6.png" class="strech-img-size" id= "box-two" onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp4.png" class="strech-img-size" id= "box-three" onclick="nextImage(this)"/>
+				</div>
+			</div>
+			<div class="third-row black center-content">
+				<div class="three-col black center-content">
+					<img src="images/lamp7.png" class="strech-img-size" id= "box-four" onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp5.png" class="strech-img-size" id= "box-five" onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp1.png" class="strech-img-size" id= "box-six" onclick="nextImage(this)"/>
+				</div>
+			</div>
+			<div class="third-row black center-content">
+				<div class="three-col black center-content">
+					<img src="images/lamp9.png" class="strech-img-size" id= "box-seven" onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp2.png" class="strech-img-size" id= "box-eight" onclick="nextImage(this)"/>
+				</div>
+				<div class="three-col black center-content">
+					<img src="images/lamp8.png" class="strech-img-size" id= "box-nine" onclick="nextImage(this)"/>
+				</div>
+			</div>
+		</div>
+		<audio src="sounds/winner.mp3" type="audio/mp3" id="you-win"></audio>
+		<audio src="sounds/wrong.mp3" type="audio/mp3" id="wrong-answer"></audio>
+		<audio src="sounds/cheer.mp3" type="audio/mp3" id="next"></audio>
+		<script src="script.js"></script>
+	</body>
+</html>
