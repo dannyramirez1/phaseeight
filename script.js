@@ -33,6 +33,9 @@ w = document.getElementById("ten");
 x = document.getElementById("eleven");
 y = document.getElementById("twelve");
 z = document.getElementById("thirteen");
+aa = document.getElementById("hint");
+ab = document.getElementById("unlock");
+ac = document.getElementById("switch");
 var goodSound = document.getElementById('you-win');
 var badSound = document.getElementById('wrong-answer');
 var nextSound = document.getElementById('next');
@@ -97,11 +100,12 @@ function checkMovie(el){
 		c.classList.add("opaque");
 		d.classList.add("opaque");
 		goodSound.play();
-		el.src = "images/mickey.png";
-		
+		ac.src = "images/mickey.png";
+		w.classList.add("grow");
 		console.log("YOU WIN!");
 
 	} else{
+		aa.classList.remove("appearance");
 		badSound.play();
 	}
 }
@@ -134,4 +138,8 @@ function checkLamp(){
 	} else{
 		
 	}
+}
+function getHint(el){ 
+		aa.classList.add("appearance");
+		ab.classList.remove("appearance");
 }

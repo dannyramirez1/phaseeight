@@ -16,7 +16,7 @@
 					<b>Question 1: What was the first Pixar movie ever created? </b>
 				</div>
 				<div class=" appearance half-column black center-content" id= "two">
-					<img src="images/coco.jpg" class="restrict-img-size" id= "first-row" onclick="nextImage2(this)"/>
+					<img src="images/coco.jpg" class="restrict-img-size grow" id= "first-row" onclick="nextImage2(this)"/>
 				</div>
 			</div>
 			<div class="left-row black center-content">
@@ -24,7 +24,7 @@
 					<b>Question 2: Which Pixar movie made the most money?</b>
 				</div>
 				<div class=" appearance half-column black center-content" id= "four">
-					<img src="images/rat.jpg" class="restrict-img-size" id= "second-row" onclick="nextImage2(this)"/>
+					<img src="images/rat.jpg" class="restrict-img-size grow" id= "second-row" onclick="nextImage2(this)"/>
 				</div>
 			</div>
 			<div class="left-row black center-content">
@@ -32,7 +32,7 @@
 					<b>Question 3: Which Pixar movie takes in the year 2805?</b>
 				</div>
 				<div class=" appearance half-column black center-content" id= "six">
-					<img src="images/bugs.jpg" class="restrict-img-size" id= "third-row" onclick="nextImage2(this)"/>
+					<img src="images/bugs.jpg" class="restrict-img-size grow" id= "third-row" onclick="nextImage2(this)"/>
 				</div>
 			<div class=" full lightblue center-content" id= "twelve">
 					<b> LIGHT UP THE ROOM! </b>
@@ -43,17 +43,23 @@
 					<b>Question 4:Which is the newest Pixar movie released?</b>
 				</div>
 				<div class=" appearance half-column black center-content" id= "eight">
-					<img src="images/up.jpg" class="restrict-img-size" id= "fourth-row" onclick="nextImage2(this)"/>
+					<img src="images/up.jpg" class="restrict-img-size grow" id= "fourth-row" onclick="nextImage2(this)"/>
 				</div>
 			</div>
 			<div class="answer-box black center-content">
 				<div class="appearance hint-box lightblue center-content" id= "thirteen">
+					<b class="appearance center-content grow" id="hint" onclick="getHint(this)">
+						Need Hints?
+					</b>
+					<b class="appearance center-content" id="unlock">
+						"To infinity … and beyond!"      "Just keep swimming! Just keep swimming!"      "EVAAAAA"        "Honey wheres my super suit?"
+					</b>
 				</div>
-				<div class="appearance check-box pinegreen center-content" id= "nine" onclick="checkMovie(this)">
+				<div class="appearance check-box pinegreen center-content grow" id= "nine" onclick="checkMovie(this)">
 					<b>Check Answers</b>
 				</div>
 				<div class="appearance mark-box black center-content" id= "ten">
-					<img src="images/check.png" class="restrict-img-size">
+					<img src="images/check.png" class="restrict-img-size" id="switch">
 				</div>
 			</div>                                                        
 		</div>
