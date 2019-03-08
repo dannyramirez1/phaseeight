@@ -36,6 +36,7 @@ z = document.getElementById("thirteen");
 aa = document.getElementById("hint");
 ab = document.getElementById("unlock");
 ac = document.getElementById("switch");
+ad = document.getElementById("mick");
 var goodSound = document.getElementById('you-win');
 var badSound = document.getElementById('wrong-answer');
 var nextSound = document.getElementById('next');
@@ -100,7 +101,8 @@ function checkMovie(el){
 		c.classList.add("opaque");
 		d.classList.add("opaque");
 		goodSound.play();
-		ac.src = "images/mickey.png";
+		ac.classList.add("appearance")
+		ad.classList.remove("appearance")
 		w.classList.add("grow");
 		console.log("YOU WIN!");
 
@@ -142,4 +144,7 @@ function checkLamp(){
 function getHint(el){ 
 		aa.classList.add("appearance");
 		ab.classList.remove("appearance");
+}
+function endPage(){
+	document.location.href = "file:///C:/Users/daniel_aramirez/Desktop/End_Page/congrats.html";
 }
