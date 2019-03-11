@@ -1,12 +1,5 @@
-// el.src.match("images/lemon_slot.PNG")
-// el.src = "images/orange_slot.PNG";
-// el.src = "images/cherry_slot.PNG";
-// document.getElementById('you-win').play();
-// el.src.match("images/cherry_slot.PNG")
-// el.src = "images/lemon_slot.PNG";
-// el.src.match("images/orange_slot.PNG")
 
-// cycle images in the following order: CHERRY --> LEMON --> ORANGE
+
 a = document.getElementById("first-row");
 b = document.getElementById("second-row");
 c = document.getElementById("third-row");
@@ -146,5 +139,5 @@ function getHint(el){
 		ab.classList.remove("appearance");
 }
 function endPage(){
-	document.location.href = "file:///C:/Users/daniel_aramirez/Desktop/End_Page/congrats.html";
+	document.location.href = "https://dannyramirez1.github.io/EndAnimated/congrats.html";
 }
