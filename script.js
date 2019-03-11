@@ -1,5 +1,5 @@
 
-
+// all these letters are variables that represent my ids from the html
 a = document.getElementById("first-row");
 b = document.getElementById("second-row");
 c = document.getElementById("third-row");
@@ -30,10 +30,11 @@ aa = document.getElementById("hint");
 ab = document.getElementById("unlock");
 ac = document.getElementById("switch");
 ad = document.getElementById("mick");
+//these are variables for my sound they are written a little different but they allow me to give a variable to my mp3 sound
 var goodSound = document.getElementById('you-win');
 var badSound = document.getElementById('wrong-answer');
 var nextSound = document.getElementById('next');
-
+//this function lets me run through statements such as if the image equals this change the source image to this else if the image equal something else change img source to a different image we assigned
 function nextImage(el){
 	if (el.src.match("images/lamp1.png")){
 		 el.src = "images/lamp2.png";
@@ -58,6 +59,7 @@ function nextImage(el){
 	}
 	checkLamp();
 }
+//this also is a function that lets me cycle through image as the function above
 function nextImage2(el){
 	if (el.src.match("images/up.jpg")){
 		 el.src = "images/toystory.jpg";
@@ -87,6 +89,7 @@ function nextImage2(el){
 		// do nothing
 	}
 }
+//this is a function allows me to check if certain divs with ids have images inside checking for them and if they are correct it runs a certain amount of functions if not it runs different functions
 function checkMovie(el){
 	if (a.src.match("toystory.jpg") && b.src.match("nemo.jpg") && c.src.match("walle.jpg") && d.src.match("incredibles.jpg")){
 		a.classList.add("opaque");
@@ -138,6 +141,7 @@ function getHint(el){
 		aa.classList.add("appearance");
 		ab.classList.remove("appearance");
 }
+//this function allows me to change my website source when the function is called upon
 function endPage(){
 	document.location.href = "https://dannyramirez1.github.io/EndAnimated/congrats.html";
 }
